@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/johnc/Documents/project/coursework/Array.cpp
+Array.h
+C:/Users/johnc/Documents/project/coursework/Array.h
+
+C:/Users/johnc/Documents/project/coursework/Array.h
+iostream
+-
+cassert
+-
+
+C:/Users/johnc/Documents/project/coursework/header.h
+Array.h
+C:/Users/johnc/Documents/project/coursework/Array.h
+Array.cpp
+C:/Users/johnc/Documents/project/coursework/Array.cpp
+
+C:/Users/johnc/Documents/project/coursework/main.cpp
+header.h
+C:/Users/johnc/Documents/project/coursework/header.h
+
