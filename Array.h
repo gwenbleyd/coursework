@@ -1,18 +1,26 @@
 #ifndef COURSEWORK_ARRAY_H
 #define COURSEWORK_ARRAY_H
 
-#include <iostream>
-#include <cassert>
+#include "Iterator.h"
 
 template <class elemType>
 
 class Array {
 public:
+
+    typedef Iterator<elemType> iterator;
+
+    iterator begin();
+    iterator end();
+
     Array();
     explicit Array(unsigned int);
+
     unsigned int size();
     bool search(const elemType&);
+
     elemType& operator[](unsigned int);
+
     void clear();
     bool empty();
     void reallocate(unsigned int);
@@ -22,6 +30,7 @@ public:
     void remove(unsigned int);
     void pull_back();
     void pull_front();
+
     ~Array();
 private:
     unsigned int _size;

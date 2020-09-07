@@ -3,5 +3,8 @@
 
 #include "Array.h"
 #include "Array.cpp"
+#include <iostream>
+#include "Iterator.h"
+#include "Iterator.cpp"
 
 #endif

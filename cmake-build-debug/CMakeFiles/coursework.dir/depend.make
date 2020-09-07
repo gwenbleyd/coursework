@@ -3,9 +3,15 @@
 
 CMakeFiles/coursework.dir/Array.cpp.obj: ../Array.cpp
 CMakeFiles/coursework.dir/Array.cpp.obj: ../Array.h
+CMakeFiles/coursework.dir/Array.cpp.obj: ../Iterator.h
+
+CMakeFiles/coursework.dir/Iterator.cpp.obj: ../Iterator.cpp
+CMakeFiles/coursework.dir/Iterator.cpp.obj: ../Iterator.h
 
 CMakeFiles/coursework.dir/main.cpp.obj: ../Array.cpp
 CMakeFiles/coursework.dir/main.cpp.obj: ../Array.h
+CMakeFiles/coursework.dir/main.cpp.obj: ../Iterator.cpp
+CMakeFiles/coursework.dir/main.cpp.obj: ../Iterator.h
 CMakeFiles/coursework.dir/main.cpp.obj: ../header.h
 CMakeFiles/coursework.dir/main.cpp.obj: ../main.cpp
 

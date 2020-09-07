@@ -1,4 +1,5 @@
 #include "Array.h"
+#include <cassert>
 
 template <class elemType>
 Array<elemType>::Array() {
@@ -127,6 +128,18 @@ template<class elemType>
 void Array<elemType>::pull_front() {
     remove(0);
 }
+
+template<class elemType>
+typename Array<elemType>::iterator Array<elemType>::begin() {
+    return _data;
+}
+
+template<class elemType>
+typename Array<elemType>::iterator Array<elemType>::end() {
+    return iterator(_data + _size);
+}
+
+
 
 
 

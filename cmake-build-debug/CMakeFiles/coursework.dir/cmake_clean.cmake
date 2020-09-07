@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/coursework.dir/Array.cpp.obj"
+  "CMakeFiles/coursework.dir/Iterator.cpp.obj"
   "CMakeFiles/coursework.dir/main.cpp.obj"
   "coursework.exe"
   "coursework.exe.manifest"

@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/johnc/Documents/project/coursework/Array.h">
 			<Option target="coursework"/>
 		</Unit>
+		<Unit filename="C:/Users/johnc/Documents/project/coursework/Iterator.cpp">
+			<Option target="coursework"/>
+		</Unit>
+		<Unit filename="C:/Users/johnc/Documents/project/coursework/Iterator.h">
+			<Option target="coursework"/>
+		</Unit>
 		<Unit filename="C:/Users/johnc/Documents/project/coursework/header.h">
 			<Option target="coursework"/>
 		</Unit>
