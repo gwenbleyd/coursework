@@ -7,11 +7,17 @@ int main(){
         x[i] = i + 1;
     }
 
-    for(Array<int>::iterator i = x.begin(); i != x.end(); i++)
-    {
-        std::cout << *i << " ";
+    for(int & i : x){
+        std::cout << i << " ";
     }
 
     std::cout<<std::endl;
 
+    Array <int> y {7, 6, 5, 4, 3, 2, 1 };
+
+    for(int & i : y){
+        std::cout << i << " ";
+    }
+
+    std::cout<<std::endl;
 }

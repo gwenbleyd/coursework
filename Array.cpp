@@ -1,6 +1,7 @@
 #include "Array.h"
 #include <cassert>
 
+
 template <class elemType>
 Array<elemType>::Array() {
     _size = 0;
@@ -15,6 +16,15 @@ Array<elemType>::Array(unsigned int size) {
         _data = new elemType[_size];
     else
         _data = nullptr;
+}
+
+template<class elemType>
+Array<elemType>::Array(const std::initializer_list<elemType> &list): Array(list.size()) {
+    int count = 0;
+    for (auto &element : list){
+        _data[count] = element;
+        ++count;
+    }
 }
 
 template<class elemType>
