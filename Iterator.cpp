@@ -37,7 +37,7 @@ typename Iterator<elemType>::pointer Iterator<elemType>::operator->() const {
 }
 
 template<typename elemType>
-Iterator<elemType> & Iterator<elemType>::operator++(elemType junk) {
+const Iterator<elemType>  Iterator<elemType>::operator++(elemType junk) {
     Iterator<elemType> i = *this;
     _value++;
     return i;

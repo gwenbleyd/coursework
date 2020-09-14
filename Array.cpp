@@ -1,6 +1,6 @@
 #include "Array.h"
 #include <cassert>
-
+#include <algorithm>
 
 template <class elemType>
 Array<elemType>::Array() {
@@ -25,6 +25,12 @@ Array<elemType>::Array(const std::initializer_list<elemType> &list): Array(list.
         _data[count] = element;
         ++count;
     }
+}
+template<class elemType>
+Array<elemType>::Array(const Array<elemType> &other) {
+    this->clear();
+    this->_data = std::move(other._data);
+    this->_size = std::move(other._size);
 }
 
 template<class elemType>
@@ -53,6 +59,12 @@ template<class elemType>
 elemType &Array<elemType>::operator[](unsigned int index) {
     assert(index >= 0 && index < _size);
     return _data[index];
+}
+
+template<class elemType>
+Array<elemType> &Array<elemType>::operator=(const Array<elemType> &other) {
+    this(other);
+    return *this;
 }
 
 template<class elemType>
@@ -146,9 +158,18 @@ typename Array<elemType>::iterator Array<elemType>::begin() {
 
 template<class elemType>
 typename Array<elemType>::iterator Array<elemType>::end() {
-    return iterator(_data + _size);
+    return _data + _size;
 }
 
+template<class elemType>
+typename Array<elemType>::const_iterator Array<elemType>::rbegin() const {
+    return _data;
+}
+
+template<class elemType>
+typename Array<elemType>::const_iterator Array<elemType>::rend() const {
+    return _data + _size;
+}
 
 
 

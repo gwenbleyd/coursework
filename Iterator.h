@@ -14,7 +14,7 @@ public:
     bool operator!=(Iterator const& other) const;
     bool operator==(Iterator const& other) const;
     Iterator<elemType> &operator++();
-    Iterator<elemType> &operator++(elemType);
+    const Iterator<elemType> operator++(elemType);
     Iterator<elemType>::reference operator*() const;
     Iterator<elemType>::pointer operator->() const;
 };

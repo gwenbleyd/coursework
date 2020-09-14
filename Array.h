@@ -13,11 +13,13 @@ public:
     Array();
     explicit Array(unsigned int);
     Array(const std::initializer_list<elemType> &);
+    Array(const Array<elemType> &);
 
     unsigned int size();
     bool search(const elemType&);
 
     elemType& operator[](unsigned int);
+    Array<elemType> & operator=(const Array<elemType> &);
 
     void clear();
 
@@ -36,15 +38,18 @@ public:
 
 
     typedef Iterator<elemType> iterator;
+    typedef const Iterator<elemType> const_iterator;
     iterator begin();
     iterator end();
+    const_iterator rbegin() const;
+    const_iterator rend() const;
 
     ~Array();
 private:
-    unsigned int _size;
+    unsigned int _size{};
     elemType * _data;
 
 };
 
 
-#endif //COURSEWORK_ARRAY_H
+#endif

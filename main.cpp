@@ -7,7 +7,7 @@ int main(){
         x[i] = i + 1;
     }
 
-    for(int & i : x){
+    for(auto & i : x){
         std::cout << i << " ";
     }
 
@@ -15,7 +15,23 @@ int main(){
 
     Array <int> y {7, 6, 5, 4, 3, 2, 1 };
 
-    for(int & i : y){
+    Array<int> z(y);
+
+    for(auto & i : y){
+        std::cout << i << " ";
+    }
+
+    std::cout<<std::endl;
+
+    for(auto & i : z){
+        std::cout << i << " ";
+    }
+
+    auto t = z;
+
+    std::cout<<std::endl;
+
+    for(auto & i : t){
         std::cout << i << " ";
     }
 
